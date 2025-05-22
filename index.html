@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio</title>
+
+  <!-- Iconos -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="estilo.css" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-gray-500">
+
+  <!-- Header / Menú de navegación -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#" >Yinon Force</a>
+      
+
+      <input type="checkbox" id="menu" class="hidden peer" />
+      <label for="menu" class="block cursor-pointer md:hidden">
+        <i class='bx bx-menu text-3xl'></i>
+      </label>
+
+      <nav class="hidden peer-checked:block md:block">
+        <ul class="flex flex-col md:flex-row gap-4">
+          <li><a href="#inicio" class="hover:underline">Inicio</a></li>
+          <li><a href="#about" class="hover:underline"></a></li>
+          <li><a href="#proyectos" class="hover:underline">Proyectos</a></li>
+          <li><a href="#cv" class="hover:underline">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="py-16 bg-gray-100">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start md:text-left text-center gap-8 px-4">
+    
+        <!-- Imagen del CV -->
+        <div class="flex-shrink-0">
+            <img src="./imagen/personal3.jpg" alt="Foto de Oscar" class="w-48 h-48 rounded-full object-cover shadow-md">
+        </div>
+
+    <!-- Datos personales -->
+        <div>
+            <h1 class="text-4xl font-bold mb-2"> Oscar Resendez Martinez</h1>
+            <p class="text-xl text-gray-700 mb-4">Programador</p>
+             <p class="text-xl text-gray-700 mb-4">Python, Javascript, CNC</p>
+            <p class="text-gray-600">
+               Crear soluciones con código limpio y eficiente.
+        <br><br>
+            Edad:  33 Años<br>
+        📧 oscar.boaneger@hotmail.com<br>
+        📞 8123296642
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Sección About -->
+  <section id="about" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-6">Sobre mí</h2>
+      <p class="max-w-xl mx-auto">
+        "Fue el hebreo el que despertó en mí la necesidad de ampliar mi comprensión de la comunicación escrita. Esta búsqueda me llevó a los lenguajes de programación, como Python y JavaScript, que respondieron a esa inquietud, dándome las herramientas para desarrollar un proyecto de automatización de conceptos filosóficos y teosóficos."
+      </p>
+    </div>
+  </section>
+
+   <!-- Sección Proyectos -->
+  <section id="proyectos" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl font-semibold mb-6">Proyectos</h2>
+
+    <!-- Grid: 1 columna en móviles, 2 en pantallas md+ -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Proyecto 1 -->
+      <div class="p-4 border rounded-lg shadow">
+        <h3 class="font-bold mb-2">Proyecto</h3>
+        <div class="aspect-video w-full">
+          <video class="w-full h-full object-cover rounded-lg" src="video/videocv.mp4" controls muted></video>
+        </div>
+        <p class="mt-2">explicacion de la implementacion de codigo.</p>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="p-4 border rounded-lg shadow">
+        <h3 class="font-bold mb-2">CNC</h3>
+        <div class="aspect-video w-full">
+          <video class="w-full h-full object-cover rounded-lg" src="video/Torno-cnc.mp4" controls muted></video>
+        </div>
+        <p class="mt-2">Programacion FANUC CNC.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+ 
+
+  <!-- Sección CV -->
+    <section id="cv" class="py-16 text-center bg-gray-50">
+  <a href="CV-OSCAR.docx" download>
+    <h2 class="text-3xl font-semibold mb-10 text-gray-800 cursor-pointer hover:text-blue-600 transition-colors duration-200">
+      Descargar CV
+    </h2>
+  </a>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto mt-10 px-4">
+    
+    <!-- Empresa 1 -->
+    <a href="https://www.mymmsa.mx/" target="_blank" rel="noopener noreferrer">
+      <div class="bg-white rounded-2xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition-shadow duration-200">
+        <img src="imagen/mymmsa.png" alt="Empresa 1" class="w-24 h-24 object-contain mb-4" />
+        <h3 class="text-xl font-semibold text-gray-800">MYMMSA</h3>
+        <p class="text-gray-600 text-sm">Cargo: Asistente Tec.</p>
+        <p class="text-gray-500 text-sm">2018 - 2020</p>
+      </div>
+    </a>
+
+    <!-- Empresa 2 -->
+    <a href="https://www.mersen.es/es" target="_blank" rel="noopener noreferrer">
+      <div class="bg-white rounded-2xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition-shadow duration-200">
+        <img src="imagen/logo-mersen.png" alt="Empresa 2" class="w-24 h-24 object-contain mb-4" />
+        <h3 class="text-xl font-semibold text-gray-800">MERSEN</h3>
+        <p class="text-gray-600 text-sm">Cargo: Operador</p>
+        <p class="text-gray-500 text-sm">2015 - 2017</p>
+      </div>
+    </a>
+
+    <!-- Empresa 3 -->
+    <a href="https://adek.com.mx/" target="_blank" rel="noopener noreferrer">
+      <div class="bg-white rounded-2xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition-shadow duration-200">
+        <img src="imagen/adek-logo.svg" alt="Empresa 3" class="w-24 h-24 object-contain mb-4" />
+        <h3 class="text-xl font-semibold text-gray-800">ADEK</h3>
+        <p class="text-gray-600 text-sm">Cargo: Operador</p>
+        <p class="text-gray-500 text-sm">2014 -</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-sm text-gray-500">
+    © 2025. Datos publicos.
+  </footer>
+
+  <script src="logica.js"></script>
+</body>
+</html>
